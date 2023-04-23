@@ -85,7 +85,6 @@
     .burger-btn {
         display: block;
         position: relative;
-        right: 40px;
         z-index: 120;
         border: none;
         background: none;
@@ -111,7 +110,7 @@
     }
     .burger-btn_open {
         position: absolute;
-        top: 20px;
+        top: -9px;
         right: 20px;
         background: url('../resourses/btn_x.png') no-repeat;
         width: 34px;
