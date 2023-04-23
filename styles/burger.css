@@ -1,0 +1,131 @@
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+.burger_open {
+    opacity: 1;
+    visibility: visible;
+}
+.burger-btn {
+    display: none;
+}
+.burger__content {
+    padding: 80px 0px 50px 30px;
+    width: 274px;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    transition: transform 0.3s linear;
+    transform: translateX(100%);
+}
+.burger_open .burger__content {
+    transform: translateX(0);
+  }
+.burger-logo {
+    width: 156px;
+    height: 26px;
+}
+.burger-nav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.burger-nav__link {
+    font-size: 25px;
+    line-height: 34px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.burger-nav__link:hover {
+    opacity: 0.5;
+  }
+.burger__text {
+    margin-top: 90px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.5;
+}
+.burger-contacts {
+    display: flex;
+    flex-direction: column;
+}
+.burger__phone {
+    font-size: 20px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #121212;
+    text-decoration: none;
+}
+.burger__link {
+    font-size: 20px;
+    line-height: 60px;
+    color: #121212;
+    text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+    .nav {
+        display: none;
+    }
+    .burger-btn {
+        display: block;
+        position: relative;
+        right: 40px;
+        z-index: 120;
+        border: none;
+        background: none;
+        width: 50px;
+    }
+    .burger-btn::before,
+    .burger-btn::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #000;
+    }
+    .burger-btn::after {
+      top: 6px;
+      width: 31px;
+    }
+    .burger-btn_open::before,
+    .burger-btn_open::after {
+      display: none;
+    }
+    .burger-btn_open {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: url('../resourses/btn_x.png') no-repeat;
+        width: 34px;
+        height: 34px;
+        background-position: center;
+        z-index: 140;
+      }
+}    
+@media (max-width: 767px) {
+    .burger-btn {
+        width: 38px;
+      }
+      .burger-btn::after {
+        top: 5px;
+        width: 24px;
+      }
+}
