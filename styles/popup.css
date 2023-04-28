@@ -1,3 +1,6 @@
+.body_fixed {
+    overflow: hidden;
+}
 .popup {
     position: fixed;
     top: 0;
@@ -63,7 +66,7 @@
 }   
 @media (max-width: 1199px) {
     .popup__close-btn {
-        right: 44px;
+        right: 40px;
         top: 32px;
     }   
 }
