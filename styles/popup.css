@@ -27,6 +27,7 @@
     overflow-y: auto;
     background-color: #fff;
     border-radius: 10px;
+    z-index: 11;
 }
 .popup__title {
     font-size: 45px;
@@ -54,6 +55,7 @@
     cursor: pointer;
 }
 .popup__close-btn {
+    display: flex;
     position: absolute;
     right: 34px;
     top: 32px;
@@ -63,14 +65,8 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-}   
-@media (max-width: 1199px) {
-    .popup__close-btn {
-        right: 40px;
-        top: 32px;
-    }   
-}
-@media (max-width: 767px) {
+}  
+@media (max-width: 790px) {
     .popup__content {
         padding: 80px 24px 80px 16px;
         width: 95%;
@@ -89,6 +85,10 @@
         padding: 20px 115px;
     }
     .popup__close-btn {
+        width: 19px;
+        height: 19px;
+        top: 46px;
+        right: 35px;
         background-image: url('../resourses/btn.png');
     }   
 }
