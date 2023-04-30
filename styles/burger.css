@@ -110,8 +110,8 @@
     }
     .burger-btn_open {
         position: absolute;
-        top: -44px;
-        right: 14px;
+        top: -13px;
+        right: 0px;
         background: url('../resourses/btn_x.png') no-repeat;
         width: 34px;
         height: 34px;
